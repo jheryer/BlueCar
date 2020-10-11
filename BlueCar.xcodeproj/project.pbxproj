@@ -124,7 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				BCEE042325326C250097EA11 /* DI */,
-				BC29718825312576008773B8 /* Modals */,
+				BC29718825312576008773B8 /* Models */,
 				BC29716E25311F44008773B8 /* AppState */,
 				BC29716D25311F07008773B8 /* Repositories */,
 				BC29716C25311EF5008773B8 /* Interactors */,
@@ -219,12 +219,12 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
-		BC29718825312576008773B8 /* Modals */ = {
+		BC29718825312576008773B8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				BC29718925312587008773B8 /* BLEDevice.swift */,
 			);
-			path = Modals;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BCEE042325326C250097EA11 /* DI */ = {
