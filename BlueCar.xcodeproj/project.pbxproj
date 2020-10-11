@@ -1,0 +1,714 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC2971342530E40E008773B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2971332530E40E008773B8 /* AppDelegate.swift */; };
+		BC2971362530E40E008773B8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2971352530E40E008773B8 /* SceneDelegate.swift */; };
+		BC2971382530E40F008773B8 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2971372530E40F008773B8 /* ContentView.swift */; };
+		BC29713A2530E411008773B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC2971392530E411008773B8 /* Assets.xcassets */; };
+		BC29713D2530E411008773B8 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC29713C2530E411008773B8 /* Preview Assets.xcassets */; };
+		BC2971402530E411008773B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC29713E2530E411008773B8 /* LaunchScreen.storyboard */; };
+		BC29714B2530E411008773B8 /* BlueCarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29714A2530E411008773B8 /* BlueCarTests.swift */; };
+		BC2971562530E411008773B8 /* BlueCarUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2971552530E411008773B8 /* BlueCarUITests.swift */; };
+		BC2971672530E74B008773B8 /* PairView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC2971662530E74B008773B8 /* PairView.swift */; };
+		BC29717025311F58008773B8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29716F25311F58008773B8 /* AppState.swift */; };
+		BC29718A25312587008773B8 /* BLEDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29718925312587008773B8 /* BLEDevice.swift */; };
+		BC29719425312905008773B8 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719325312905008773B8 /* DIContainer.swift */; };
+		BC29719925312A0B008773B8 /* BLEInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719825312A0B008773B8 /* BLEInteractor.swift */; };
+		BC29719E25314509008773B8 /* DeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719D25314509008773B8 /* DeviceRow.swift */; };
+		BCEE03FE2531F8CF0097EA11 /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE03FD2531F8CF0097EA11 /* BLEController.swift */; };
+		BCEE040F25325AE30097EA11 /* ControlSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE040E25325AE30097EA11 /* ControlSlider.swift */; };
+		BCEE041425325F9E0097EA11 /* BasicMotorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */; };
+		BCEE041F253262670097EA11 /* ControlButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE041E253262670097EA11 /* ControlButton.swift */; };
+		BCEE042525326C3B0097EA11 /* Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE042425326C3B0097EA11 /* Inject.swift */; };
+		BCEE043D253276E60097EA11 /* DependencyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE043C253276E60097EA11 /* DependencyManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC2971472530E411008773B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC2971282530E40E008773B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC29712F2530E40E008773B8;
+			remoteInfo = BlueCar;
+		};
+		BC2971522530E411008773B8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC2971282530E40E008773B8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC29712F2530E40E008773B8;
+			remoteInfo = BlueCar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC2971302530E40E008773B8 /* BlueCar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlueCar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2971332530E40E008773B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC2971352530E40E008773B8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC2971372530E40F008773B8 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		BC2971392530E411008773B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC29713C2530E411008773B8 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		BC29713F2530E411008773B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC2971412530E411008773B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2971462530E411008773B8 /* BlueCarTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueCarTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC29714A2530E411008773B8 /* BlueCarTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCarTests.swift; sourceTree = "<group>"; };
+		BC29714C2530E411008773B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2971512530E411008773B8 /* BlueCarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlueCarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC2971552530E411008773B8 /* BlueCarUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueCarUITests.swift; sourceTree = "<group>"; };
+		BC2971572530E411008773B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC2971662530E74B008773B8 /* PairView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PairView.swift; sourceTree = "<group>"; };
+		BC29716F25311F58008773B8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BC29718925312587008773B8 /* BLEDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevice.swift; sourceTree = "<group>"; };
+		BC29719325312905008773B8 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
+		BC29719825312A0B008773B8 /* BLEInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEInteractor.swift; sourceTree = "<group>"; };
+		BC29719D25314509008773B8 /* DeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRow.swift; sourceTree = "<group>"; };
+		BCEE03FD2531F8CF0097EA11 /* BLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
+		BCEE040E25325AE30097EA11 /* ControlSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSlider.swift; sourceTree = "<group>"; };
+		BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMotorControl.swift; sourceTree = "<group>"; };
+		BCEE041E253262670097EA11 /* ControlButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlButton.swift; sourceTree = "<group>"; };
+		BCEE042425326C3B0097EA11 /* Inject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inject.swift; sourceTree = "<group>"; };
+		BCEE043C253276E60097EA11 /* DependencyManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC29712D2530E40E008773B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2971432530E411008773B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29714E2530E411008773B8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC2971272530E40E008773B8 = {
+			isa = PBXGroup;
+			children = (
+				BC2971322530E40E008773B8 /* BlueCar */,
+				BC2971492530E411008773B8 /* BlueCarTests */,
+				BC2971542530E411008773B8 /* BlueCarUITests */,
+				BC2971312530E40E008773B8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC2971312530E40E008773B8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC2971302530E40E008773B8 /* BlueCar.app */,
+				BC2971462530E411008773B8 /* BlueCarTests.xctest */,
+				BC2971512530E411008773B8 /* BlueCarUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC2971322530E40E008773B8 /* BlueCar */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE042325326C250097EA11 /* DI */,
+				BC29718825312576008773B8 /* Modals */,
+				BC29716E25311F44008773B8 /* AppState */,
+				BC29716D25311F07008773B8 /* Repositories */,
+				BC29716C25311EF5008773B8 /* Interactors */,
+				BC29716B25311ED2008773B8 /* UI */,
+				BC2971332530E40E008773B8 /* AppDelegate.swift */,
+				BC2971352530E40E008773B8 /* SceneDelegate.swift */,
+				BC2971392530E411008773B8 /* Assets.xcassets */,
+				BC29713E2530E411008773B8 /* LaunchScreen.storyboard */,
+				BC2971412530E411008773B8 /* Info.plist */,
+				BC29713B2530E411008773B8 /* Preview Content */,
+			);
+			path = BlueCar;
+			sourceTree = "<group>";
+		};
+		BC29713B2530E411008773B8 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				BC29713C2530E411008773B8 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BC2971492530E411008773B8 /* BlueCarTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC29714A2530E411008773B8 /* BlueCarTests.swift */,
+				BC29714C2530E411008773B8 /* Info.plist */,
+			);
+			path = BlueCarTests;
+			sourceTree = "<group>";
+		};
+		BC2971542530E411008773B8 /* BlueCarUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC2971552530E411008773B8 /* BlueCarUITests.swift */,
+				BC2971572530E411008773B8 /* Info.plist */,
+			);
+			path = BlueCarUITests;
+			sourceTree = "<group>";
+		};
+		BC29716B25311ED2008773B8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BC297181253122C4008773B8 /* Components */,
+				BC297180253122BD008773B8 /* Screens */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		BC29716C25311EF5008773B8 /* Interactors */ = {
+			isa = PBXGroup;
+			children = (
+				BC29719825312A0B008773B8 /* BLEInteractor.swift */,
+			);
+			path = Interactors;
+			sourceTree = "<group>";
+		};
+		BC29716D25311F07008773B8 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE03FD2531F8CF0097EA11 /* BLEController.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		BC29716E25311F44008773B8 /* AppState */ = {
+			isa = PBXGroup;
+			children = (
+				BC29716F25311F58008773B8 /* AppState.swift */,
+				BC29719325312905008773B8 /* DIContainer.swift */,
+			);
+			path = AppState;
+			sourceTree = "<group>";
+		};
+		BC297180253122BD008773B8 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				BC2971372530E40F008773B8 /* ContentView.swift */,
+				BC2971662530E74B008773B8 /* PairView.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BC297181253122C4008773B8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				BC29719D25314509008773B8 /* DeviceRow.swift */,
+				BCEE040E25325AE30097EA11 /* ControlSlider.swift */,
+				BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */,
+				BCEE041E253262670097EA11 /* ControlButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		BC29718825312576008773B8 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				BC29718925312587008773B8 /* BLEDevice.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		BCEE042325326C250097EA11 /* DI */ = {
+			isa = PBXGroup;
+			children = (
+				BCEE042425326C3B0097EA11 /* Inject.swift */,
+				BCEE043C253276E60097EA11 /* DependencyManager.swift */,
+			);
+			path = DI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC29712F2530E40E008773B8 /* BlueCar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC29715A2530E411008773B8 /* Build configuration list for PBXNativeTarget "BlueCar" */;
+			buildPhases = (
+				BC29712C2530E40E008773B8 /* Sources */,
+				BC29712D2530E40E008773B8 /* Frameworks */,
+				BC29712E2530E40E008773B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlueCar;
+			productName = BlueCar;
+			productReference = BC2971302530E40E008773B8 /* BlueCar.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC2971452530E411008773B8 /* BlueCarTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC29715D2530E411008773B8 /* Build configuration list for PBXNativeTarget "BlueCarTests" */;
+			buildPhases = (
+				BC2971422530E411008773B8 /* Sources */,
+				BC2971432530E411008773B8 /* Frameworks */,
+				BC2971442530E411008773B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC2971482530E411008773B8 /* PBXTargetDependency */,
+			);
+			name = BlueCarTests;
+			productName = BlueCarTests;
+			productReference = BC2971462530E411008773B8 /* BlueCarTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC2971502530E411008773B8 /* BlueCarUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC2971602530E411008773B8 /* Build configuration list for PBXNativeTarget "BlueCarUITests" */;
+			buildPhases = (
+				BC29714D2530E411008773B8 /* Sources */,
+				BC29714E2530E411008773B8 /* Frameworks */,
+				BC29714F2530E411008773B8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC2971532530E411008773B8 /* PBXTargetDependency */,
+			);
+			name = BlueCarUITests;
+			productName = BlueCarUITests;
+			productReference = BC2971512530E411008773B8 /* BlueCarUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC2971282530E40E008773B8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					BC29712F2530E40E008773B8 = {
+						CreatedOnToolsVersion = 12.0.1;
+					};
+					BC2971452530E411008773B8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BC29712F2530E40E008773B8;
+					};
+					BC2971502530E411008773B8 = {
+						CreatedOnToolsVersion = 12.0.1;
+						TestTargetID = BC29712F2530E40E008773B8;
+					};
+				};
+			};
+			buildConfigurationList = BC29712B2530E40E008773B8 /* Build configuration list for PBXProject "BlueCar" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC2971272530E40E008773B8;
+			productRefGroup = BC2971312530E40E008773B8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC29712F2530E40E008773B8 /* BlueCar */,
+				BC2971452530E411008773B8 /* BlueCarTests */,
+				BC2971502530E411008773B8 /* BlueCarUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC29712E2530E40E008773B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2971402530E411008773B8 /* LaunchScreen.storyboard in Resources */,
+				BC29713D2530E411008773B8 /* Preview Assets.xcassets in Resources */,
+				BC29713A2530E411008773B8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2971442530E411008773B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29714F2530E411008773B8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC29712C2530E40E008773B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCEE042525326C3B0097EA11 /* Inject.swift in Sources */,
+				BC29719425312905008773B8 /* DIContainer.swift in Sources */,
+				BC29719E25314509008773B8 /* DeviceRow.swift in Sources */,
+				BC2971672530E74B008773B8 /* PairView.swift in Sources */,
+				BCEE040F25325AE30097EA11 /* ControlSlider.swift in Sources */,
+				BCEE041425325F9E0097EA11 /* BasicMotorControl.swift in Sources */,
+				BC29718A25312587008773B8 /* BLEDevice.swift in Sources */,
+				BCEE043D253276E60097EA11 /* DependencyManager.swift in Sources */,
+				BC29717025311F58008773B8 /* AppState.swift in Sources */,
+				BC29719925312A0B008773B8 /* BLEInteractor.swift in Sources */,
+				BCEE041F253262670097EA11 /* ControlButton.swift in Sources */,
+				BC2971342530E40E008773B8 /* AppDelegate.swift in Sources */,
+				BCEE03FE2531F8CF0097EA11 /* BLEController.swift in Sources */,
+				BC2971362530E40E008773B8 /* SceneDelegate.swift in Sources */,
+				BC2971382530E40F008773B8 /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC2971422530E411008773B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC29714B2530E411008773B8 /* BlueCarTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC29714D2530E411008773B8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC2971562530E411008773B8 /* BlueCarUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC2971482530E411008773B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC29712F2530E40E008773B8 /* BlueCar */;
+			targetProxy = BC2971472530E411008773B8 /* PBXContainerItemProxy */;
+		};
+		BC2971532530E411008773B8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC29712F2530E40E008773B8 /* BlueCar */;
+			targetProxy = BC2971522530E411008773B8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC29713E2530E411008773B8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC29713F2530E411008773B8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC2971582530E411008773B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC2971592530E411008773B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC29715B2530E411008773B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueCar/Preview Content\"";
+				DEVELOPMENT_TEAM = FMBWR864CC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BlueCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcoder.BlueCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC29715C2530E411008773B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BlueCar/Preview Content\"";
+				DEVELOPMENT_TEAM = FMBWR864CC;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BlueCar/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcoder.BlueCar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BC29715E2530E411008773B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D7XGA39UY;
+				INFOPLIST_FILE = BlueCarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcoder.BlueCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueCar.app/BlueCar";
+			};
+			name = Debug;
+		};
+		BC29715F2530E411008773B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D7XGA39UY;
+				INFOPLIST_FILE = BlueCarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcoder.BlueCarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlueCar.app/BlueCar";
+			};
+			name = Release;
+		};
+		BC2971612530E411008773B8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D7XGA39UY;
+				INFOPLIST_FILE = BlueCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcoder.BlueCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueCar;
+			};
+			name = Debug;
+		};
+		BC2971622530E411008773B8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D7XGA39UY;
+				INFOPLIST_FILE = BlueCarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madcoder.BlueCarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BlueCar;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC29712B2530E40E008773B8 /* Build configuration list for PBXProject "BlueCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2971582530E411008773B8 /* Debug */,
+				BC2971592530E411008773B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC29715A2530E411008773B8 /* Build configuration list for PBXNativeTarget "BlueCar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC29715B2530E411008773B8 /* Debug */,
+				BC29715C2530E411008773B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC29715D2530E411008773B8 /* Build configuration list for PBXNativeTarget "BlueCarTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC29715E2530E411008773B8 /* Debug */,
+				BC29715F2530E411008773B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC2971602530E411008773B8 /* Build configuration list for PBXNativeTarget "BlueCarUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC2971612530E411008773B8 /* Debug */,
+				BC2971622530E411008773B8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC2971282530E40E008773B8 /* Project object */;
+}

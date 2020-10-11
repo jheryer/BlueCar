@@ -1,0 +1,48 @@
+
+import SwiftUI
+
+let MAX_VALUE = 255.0
+let MIN_VALUE = 0.0
+
+struct BasicMotorControl: View {
+    @ObservedObject var viewModel:ViewModel
+    @State var controlValue = 0.0
+    
+    var body: some View {
+        VStack(spacing: 16) {
+            Text(viewModel.name)
+            ControlSlider(value: $viewModel.controlValue)
+            HStack(spacing: 64) {
+                ControlButton(title: "Off",value: MIN_VALUE, controlValue: $viewModel.controlValue)
+                ControlButton(title: "On",value: MAX_VALUE, controlValue: $viewModel.controlValue)
+            }
+        }
+    }
+}
+
+extension BasicMotorControl {
+    class ViewModel: ObservableObject {
+        @Inject var container: DIContainer
+        var name:String
+        var lastValue: Double = 0.0
+        @Published var controlValue = 0.0 {
+            didSet {
+                //print("\(name):\(Int(controlValue))")
+                if controlValue != lastValue {
+                    container.interactors.bleInteractor.sendMessage("\(name):\(Int(controlValue))")
+                    lastValue = controlValue
+                }
+            }
+        }
+     
+        init(name: String) {
+            self.name = name
+        }
+    }
+}
+
+struct BasicControl_Previews: PreviewProvider {
+    static var previews: some View {
+        BasicMotorControl(viewModel: BasicMotorControl.ViewModel(name: "test"))
+    }
+}
