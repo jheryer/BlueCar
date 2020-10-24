@@ -24,12 +24,11 @@ extension BasicMotorControl {
     class ViewModel: ObservableObject {
         @Inject var container: DIContainer
         var name:String
-        var lastValue: Double = 0.0
-        @Published var controlValue = 0.0 {
+        var lastValue: Double = MIN_VALUE
+        @Published var controlValue = MIN_VALUE {
             didSet {
-                //print("\(name):\(Int(controlValue))")
                 if controlValue != lastValue {
-                    container.interactors.bleInteractor.sendMessage("\(name):\(Int(controlValue))")
+                    // container.interactors.bleInteractor.sendMessage("\(name):\(Int(controlValue))")
                     lastValue = controlValue
                 }
             }

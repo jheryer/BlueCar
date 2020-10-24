@@ -8,7 +8,7 @@ protocol BLEInteractor: Injectable {
     func sendMessage(_ message: String) -> Void
 }
 
-public class BLE4Interactor: BLEInteractor,BLEControllerDelegate, ObservableObject {
+public class BLE4Interactor: BLEInteractor,BLEControllerDelegate {
     var deviceList = [BLEDevice]()
     var deviceSubject = PassthroughSubject<BLEDevice, Never>()
     

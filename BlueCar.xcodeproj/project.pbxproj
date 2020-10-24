@@ -21,6 +21,7 @@
 		BC29719425312905008773B8 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719325312905008773B8 /* DIContainer.swift */; };
 		BC29719925312A0B008773B8 /* BLEInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719825312A0B008773B8 /* BLEInteractor.swift */; };
 		BC29719E25314509008773B8 /* DeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719D25314509008773B8 /* DeviceRow.swift */; };
+		BC91526F25449D2700CACC11 /* JoyStickControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91526E25449D2700CACC11 /* JoyStickControl.swift */; };
 		BCEE03FE2531F8CF0097EA11 /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE03FD2531F8CF0097EA11 /* BLEController.swift */; };
 		BCEE040F25325AE30097EA11 /* ControlSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE040E25325AE30097EA11 /* ControlSlider.swift */; };
 		BCEE041425325F9E0097EA11 /* BasicMotorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */; };
@@ -67,6 +68,7 @@
 		BC29719325312905008773B8 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		BC29719825312A0B008773B8 /* BLEInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEInteractor.swift; sourceTree = "<group>"; };
 		BC29719D25314509008773B8 /* DeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRow.swift; sourceTree = "<group>"; };
+		BC91526E25449D2700CACC11 /* JoyStickControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyStickControl.swift; sourceTree = "<group>"; };
 		BCEE03FD2531F8CF0097EA11 /* BLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
 		BCEE040E25325AE30097EA11 /* ControlSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSlider.swift; sourceTree = "<group>"; };
 		BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMotorControl.swift; sourceTree = "<group>"; };
@@ -215,6 +217,7 @@
 				BCEE040E25325AE30097EA11 /* ControlSlider.swift */,
 				BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */,
 				BCEE041E253262670097EA11 /* ControlButton.swift */,
+				BC91526E25449D2700CACC11 /* JoyStickControl.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -252,6 +255,8 @@
 			dependencies = (
 			);
 			name = BlueCar;
+			packageProductDependencies = (
+			);
 			productName = BlueCar;
 			productReference = BC2971302530E40E008773B8 /* BlueCar.app */;
 			productType = "com.apple.product-type.application";
@@ -323,6 +328,8 @@
 				Base,
 			);
 			mainGroup = BC2971272530E40E008773B8;
+			packageReferences = (
+			);
 			productRefGroup = BC2971312530E40E008773B8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -367,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCEE042525326C3B0097EA11 /* Inject.swift in Sources */,
+				BC91526F25449D2700CACC11 /* JoyStickControl.swift in Sources */,
 				BC29719425312905008773B8 /* DIContainer.swift in Sources */,
 				BC29719E25314509008773B8 /* DeviceRow.swift in Sources */,
 				BC2971672530E74B008773B8 /* PairView.swift in Sources */,

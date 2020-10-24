@@ -8,10 +8,12 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack(spacing: 30) {
-                ForEach(viewModel.motorList, id: \.self){
-                    name in
-                    BasicMotorControl(viewModel: BasicMotorControl.ViewModel(name: name)).frame(width: 300, height: 200, alignment: .center)
-                }
+//                ForEach(viewModel.motorList, id: \.self){
+//                    name in
+//                    BasicMotorControl(viewModel: BasicMotorControl.ViewModel(name: name)).frame(width: 300, height: 200, alignment: .center)
+//                }
+            JoyStickControl()
+              
             }.navigationBarItems(leading:Text(selectedDevice.name) ,trailing: Button("Find Device") {
                 self.showPairView.toggle()
             }.sheet(isPresented: $showPairView, content: {

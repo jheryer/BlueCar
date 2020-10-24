@@ -6,12 +6,8 @@ struct ControlSlider: View {
     var body: some View {
         HStack {
             Image(systemName: "minus")
-            Slider(value: $value, in: 0...255, step: 16, onEditingChanged: {
-              editing in
-//                if editing == false {
-//                    value = sliderValue
-//                }
-            }).padding()
+            Slider(value: $value, in: 0...255, step: 16)
+                .padding()
                 .accentColor(Color.blue)
                 .overlay(
                     RoundedRectangle(cornerRadius: 8.0)
