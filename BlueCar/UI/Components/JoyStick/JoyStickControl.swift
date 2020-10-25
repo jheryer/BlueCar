@@ -1,13 +1,12 @@
 import SwiftUI
-// implementation based off: https://www.youtube.com/watch?v=tJKAKnyy_68
+// implementation based off of the video from Kazi Nabi
+// https://www.youtube.com/watch?v=tJKAKnyy_68
 
 struct JoyStickControl: View {
-
+    @ObservedObject var viewModel:ViewModel
     @State var isRotating = false
     @State var angleValue: CGFloat = 0.0
-    
-    @ObservedObject var viewModel:ViewModel = JoyStickControl.ViewModel()
-
+   
     var body: some View {
         ZStack {
             Rectangle()
@@ -20,7 +19,7 @@ struct JoyStickControl: View {
 
             JoyStickGestureView(isRotating: $viewModel.isRotating, onChange: {
                 location in
-                self.viewModel.changeLocation(location: location)
+                self.viewModel.moveKnob(location: location)
             })
 
             Text("\(String.init(format: "%.0f", viewModel.angleValue))")
@@ -34,10 +33,25 @@ struct JoyStickControl: View {
 
 extension JoyStickControl {
     class ViewModel: ObservableObject {
+        @Inject var container: DIContainer
+        var name:String
         @Published var angleValue: CGFloat = 0.0
         @Published var isRotating: Bool = false
+        
+        init(name: String) {
+            self.name = name
+        }
+        
+        func moveKnob(location: CGPoint) {
+            changeLocation(location: location)
+            let controlValue = ControlValue(name: name, value: Int(angleValue))
+            
+            print(controlValue)
+            //container.interactors.bleInteractor.sendValue(value: ControlValue(name: name, value: Int(angleValue)))
+            
+        }
 
-        func changeLocation(location: CGPoint) {
+        private func changeLocation(location: CGPoint) {
 
             let loc1 = CGPoint(x: location.x - 150, y: location.y - 150)
             let loc2 = CGPoint(x: 0 - 150, y: location.y - 150)
@@ -48,7 +62,9 @@ extension JoyStickControl {
 
             var degree = angleV1V2 * CGFloat(180.0 / .pi)
 
-            if degree < 0 { degree += 360.0 }
+            if degree < 0 {
+                degree += 360.0
+            }
 
             isRotating = true
             angleValue = 360 - degree
@@ -58,6 +74,6 @@ extension JoyStickControl {
 
 struct JoyStickControl_Previews: PreviewProvider {
     static var previews: some View {
-        JoyStickControl()
+        JoyStickControl(viewModel: JoyStickControl.ViewModel(name: "angleControl"))
     }
 }

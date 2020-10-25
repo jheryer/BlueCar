@@ -5,14 +5,16 @@ protocol BLEInteractor: Injectable {
     func getDevices() -> [BLEDevice]
     func scanForPeripherals() -> ()
     func subject() -> PassthroughSubject<BLEDevice, Never>
-    func sendMessage(_ message: String) -> Void
+    func sendValue(value: ControlValue) -> Void
 }
 
 public class BLE4Interactor: BLEInteractor,BLEControllerDelegate {
+    
     var deviceList = [BLEDevice]()
     var deviceSubject = PassthroughSubject<BLEDevice, Never>()
-    
     var bleController: BLEController
+    
+    private var lastControlValueSent: ControlValue?
     
     func subject() -> PassthroughSubject<BLEDevice, Never> {
         return deviceSubject
@@ -36,8 +38,22 @@ public class BLE4Interactor: BLEInteractor,BLEControllerDelegate {
         deviceSubject.send(peripheral)
     }
     
-    func sendMessage(_ message: String) {
-        bleController.sendMessageToDevice(message)
+    func sendValue(value: ControlValue) {
+        if(isValid(value)) {
+            let bleCommand = ControlValueBLEAdapter.adapt(value: value)
+            bleController.sendMessageToDevice(bleCommand)
+        }        
     }
+    
+    private func isValid(_ value: ControlValue) -> Bool {
+        if let lastValue = lastControlValueSent {
+            if lastValue == value || value.name.isEmpty {
+                return false
+            }
+        }
+        lastControlValueSent = value
+        return true
+    }
+    
 }
 

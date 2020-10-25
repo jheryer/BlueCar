@@ -27,10 +27,7 @@ extension BasicMotorControl {
         var lastValue: Double = MIN_VALUE
         @Published var controlValue = MIN_VALUE {
             didSet {
-                if controlValue != lastValue {
-                    // container.interactors.bleInteractor.sendMessage("\(name):\(Int(controlValue))")
-                    lastValue = controlValue
-                }
+                container.interactors.bleInteractor.sendValue(value: ControlValue(name: name, value: Int(controlValue)))
             }
         }
      

@@ -12,7 +12,7 @@ struct ContentView: View {
 //                    name in
 //                    BasicMotorControl(viewModel: BasicMotorControl.ViewModel(name: name)).frame(width: 300, height: 200, alignment: .center)
 //                }
-            JoyStickControl()
+                JoyStickControl(viewModel: JoyStickControl.ViewModel(name: "angleControl"))
               
             }.navigationBarItems(leading:Text(selectedDevice.name) ,trailing: Button("Find Device") {
                 self.showPairView.toggle()
