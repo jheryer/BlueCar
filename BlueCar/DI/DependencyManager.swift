@@ -2,7 +2,7 @@ class DependencyManager {
     private let container: DIContainer
     
     init() {
-        self.container = DIContainer(interactors: .init(bleInteractor: BLE4Interactor(bleController: SimpleBLEController())))
+        self.container = DIContainer(interactors: .init(bleInteractor: JoyStickInteractor(bleController: StubBLEController())))
         addDependencies()
     }
     

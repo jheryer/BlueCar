@@ -45,10 +45,7 @@ extension JoyStickControl {
         func moveKnob(location: CGPoint) {
             changeLocation(location: location)
             let controlValue = ControlValue(name: name, value: Int(angleValue))
-            
-            print(controlValue)
-            //container.interactors.bleInteractor.sendValue(value: ControlValue(name: name, value: Int(angleValue)))
-            
+            container.interactors.bleInteractor.sendValue(value: controlValue)
         }
 
         private func changeLocation(location: CGPoint) {

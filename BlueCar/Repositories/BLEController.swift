@@ -13,6 +13,18 @@ protocol BLEController {
     var delegate: BLEControllerDelegate? {get set}
 }
 
+class StubBLEController: NSObject, BLEController {
+    func startScan() {
+        print("scan started")
+    }
+    
+    func sendMessageToDevice(_ message: String) {
+        print("stub message: \(message)")
+    }
+    
+    var delegate: BLEControllerDelegate?
+}
+
 class SimpleBLEController: NSObject, BLEController, CBCentralManagerDelegate, CBPeripheralDelegate {
     var centralManager: CBCentralManager?
     var peripherialMonitor: CBPeripheral?

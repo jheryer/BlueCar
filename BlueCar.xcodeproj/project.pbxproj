@@ -19,8 +19,9 @@
 		BC29717025311F58008773B8 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29716F25311F58008773B8 /* AppState.swift */; };
 		BC29718A25312587008773B8 /* BLEDevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29718925312587008773B8 /* BLEDevice.swift */; };
 		BC29719425312905008773B8 /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719325312905008773B8 /* DIContainer.swift */; };
-		BC29719925312A0B008773B8 /* BLEInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719825312A0B008773B8 /* BLEInteractor.swift */; };
+		BC29719925312A0B008773B8 /* JoyStickInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719825312A0B008773B8 /* JoyStickInteractor.swift */; };
 		BC29719E25314509008773B8 /* DeviceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC29719D25314509008773B8 /* DeviceRow.swift */; };
+		BC7567EB2546195B004A8A4F /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC7567EA2546195B004A8A4F /* Validator.swift */; };
 		BC91526F25449D2700CACC11 /* JoyStickControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91526E25449D2700CACC11 /* JoyStickControl.swift */; };
 		BC915283254501BD00CACC11 /* IndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC915282254501BD00CACC11 /* IndicatorView.swift */; };
 		BC91528C2545022E00CACC11 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC91528B2545022E00CACC11 /* Color.swift */; };
@@ -31,6 +32,7 @@
 		BC9152AB25451D0F00CACC11 /* ControlValueBLEAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9152AA25451D0F00CACC11 /* ControlValueBLEAdapter.swift */; };
 		BC9152B025451E2400CACC11 /* BLEInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9152AF25451E2400CACC11 /* BLEInteractorTests.swift */; };
 		BC9152B625451ECB00CACC11 /* SpyBLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9152B525451ECB00CACC11 /* SpyBLEController.swift */; };
+		BC9152C42545E46700CACC11 /* SimpleMotorControlInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC9152C32545E46700CACC11 /* SimpleMotorControlInteractor.swift */; };
 		BCEE03FE2531F8CF0097EA11 /* BLEController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE03FD2531F8CF0097EA11 /* BLEController.swift */; };
 		BCEE040F25325AE30097EA11 /* ControlSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE040E25325AE30097EA11 /* ControlSlider.swift */; };
 		BCEE041425325F9E0097EA11 /* BasicMotorControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */; };
@@ -75,8 +77,9 @@
 		BC29716F25311F58008773B8 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		BC29718925312587008773B8 /* BLEDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEDevice.swift; sourceTree = "<group>"; };
 		BC29719325312905008773B8 /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
-		BC29719825312A0B008773B8 /* BLEInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEInteractor.swift; sourceTree = "<group>"; };
+		BC29719825312A0B008773B8 /* JoyStickInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyStickInteractor.swift; sourceTree = "<group>"; };
 		BC29719D25314509008773B8 /* DeviceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceRow.swift; sourceTree = "<group>"; };
+		BC7567EA2546195B004A8A4F /* Validator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
 		BC91526E25449D2700CACC11 /* JoyStickControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoyStickControl.swift; sourceTree = "<group>"; };
 		BC915282254501BD00CACC11 /* IndicatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndicatorView.swift; sourceTree = "<group>"; };
 		BC91528B2545022E00CACC11 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
@@ -87,6 +90,7 @@
 		BC9152AA25451D0F00CACC11 /* ControlValueBLEAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlValueBLEAdapter.swift; sourceTree = "<group>"; };
 		BC9152AF25451E2400CACC11 /* BLEInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEInteractorTests.swift; sourceTree = "<group>"; };
 		BC9152B525451ECB00CACC11 /* SpyBLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpyBLEController.swift; sourceTree = "<group>"; };
+		BC9152C32545E46700CACC11 /* SimpleMotorControlInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleMotorControlInteractor.swift; sourceTree = "<group>"; };
 		BCEE03FD2531F8CF0097EA11 /* BLEController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLEController.swift; sourceTree = "<group>"; };
 		BCEE040E25325AE30097EA11 /* ControlSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlSlider.swift; sourceTree = "<group>"; };
 		BCEE041325325F9E0097EA11 /* BasicMotorControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicMotorControl.swift; sourceTree = "<group>"; };
@@ -200,8 +204,10 @@
 		BC29716C25311EF5008773B8 /* Interactors */ = {
 			isa = PBXGroup;
 			children = (
-				BC29719825312A0B008773B8 /* BLEInteractor.swift */,
+				BC29719825312A0B008773B8 /* JoyStickInteractor.swift */,
+				BC9152C32545E46700CACC11 /* SimpleMotorControlInteractor.swift */,
 				BC9152AA25451D0F00CACC11 /* ControlValueBLEAdapter.swift */,
+				BC7567EA2546195B004A8A4F /* Validator.swift */,
 			);
 			path = Interactors;
 			sourceTree = "<group>";
@@ -218,7 +224,6 @@
 			isa = PBXGroup;
 			children = (
 				BC29716F25311F58008773B8 /* AppState.swift */,
-				BC29719325312905008773B8 /* DIContainer.swift */,
 			);
 			path = AppState;
 			sourceTree = "<group>";
@@ -286,6 +291,7 @@
 			children = (
 				BCEE042425326C3B0097EA11 /* Inject.swift */,
 				BCEE043C253276E60097EA11 /* DependencyManager.swift */,
+				BC29719325312905008773B8 /* DIContainer.swift */,
 			);
 			path = DI;
 			sourceTree = "<group>";
@@ -437,14 +443,16 @@
 				BCEE043D253276E60097EA11 /* DependencyManager.swift in Sources */,
 				BC9152A12545068A00CACC11 /* JoyStickGestureView.swift in Sources */,
 				BC29717025311F58008773B8 /* AppState.swift in Sources */,
-				BC29719925312A0B008773B8 /* BLEInteractor.swift in Sources */,
+				BC29719925312A0B008773B8 /* JoyStickInteractor.swift in Sources */,
 				BC915283254501BD00CACC11 /* IndicatorView.swift in Sources */,
 				BCEE041F253262670097EA11 /* ControlButton.swift in Sources */,
 				BC2971342530E40E008773B8 /* AppDelegate.swift in Sources */,
 				BC9152942545034700CACC11 /* JoyStickBackgroundView.swift in Sources */,
 				BCEE03FE2531F8CF0097EA11 /* BLEController.swift in Sources */,
 				BC2971362530E40E008773B8 /* SceneDelegate.swift in Sources */,
+				BC9152C42545E46700CACC11 /* SimpleMotorControlInteractor.swift in Sources */,
 				BC2971382530E40F008773B8 /* ContentView.swift in Sources */,
+				BC7567EB2546195B004A8A4F /* Validator.swift in Sources */,
 				BC91528C2545022E00CACC11 /* Color.swift in Sources */,
 				BC9152A625451C0400CACC11 /* ControlValue.swift in Sources */,
 			);

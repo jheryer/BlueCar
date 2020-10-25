@@ -1,14 +1,8 @@
 import SwiftUI
 import Combine
 
-protocol BLEInteractor: Injectable {
-    func getDevices() -> [BLEDevice]
-    func scanForPeripherals() -> ()
-    func subject() -> PassthroughSubject<BLEDevice, Never>
-    func sendValue(value: ControlValue) -> Void
-}
 
-public class BLE4Interactor: BLEInteractor,BLEControllerDelegate {
+public class SimpleMotorControlInteractor: BLEInteractor,BLEControllerDelegate {
     
     var deviceList = [BLEDevice]()
     var deviceSubject = PassthroughSubject<BLEDevice, Never>()
