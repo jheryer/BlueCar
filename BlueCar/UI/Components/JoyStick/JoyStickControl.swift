@@ -1,4 +1,5 @@
 import SwiftUI
+// implementation based off: https://www.youtube.com/watch?v=tJKAKnyy_68
 
 struct JoyStickControl: View {
 
